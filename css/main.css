@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.otf');
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../fonts/Poppins-Regular.otf');
+}
+
+:root {
+    --color-background: linear-gradient(90deg, #fce2cd 15%,#b1816c  85%); 
+    --color-text-dark: #533a3b;
+    --color-text-light: #E39178;
+    --color-white: #FFF5EB;
+    --color-span: #866252;
+    --color-text: #4f4f4f;
+    --color-text-out: #90908e;
+    --color-black: #212121;
+}
+
+html, 
+body {
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
+    background: var(--color-background);
+    color: var(--color-text-dark);
+}
+
+b {
+    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+}
+
+.color-span {
+    color: var(--color-span);
+}
+
+a.navbar-brand {
+    margin-left: -50px;
+}
+
+.nav-link {
+    color: var(--color-text-dark)!important;
+    padding-left: 35px!important;
+    padding-right: 35px!important;
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-text-dark)!important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-light {
+    background-color: var(--color-text-light);
+    color: var(--color-text-dark)!important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: var(--color-white);
+}
+
+.btn-icon-left {
+    padding-left: 70px;
+}
+
+.btn-icon-left span.icon-left {
+    display: inline-block;
+    color: var(--color-text-dark);
+    background-color: var(--color-white);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.btn-icon {
+    padding-right: 75px;
+}
+
+.btn-icon .icon {
+    display: inline-block;
+    color: var(--color-text-dark);
+    background-color: var(--color-text-light);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 10px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.btn-sm {
+    padding: 9px 15px!important;
+    border-radius: 15px!important;
+    font-size: 18px!important;
+}
+
+.btn-social {
+    width: 50px;
+}
+
+.banner {
+    padding-top: 110px;
+    padding-bottom: 200px;
+}
+
+.text-banner {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.text-banner h1 {
+    color: var(--color-text-light);
+    font-size: 60px;
+}
+
+.text-banner p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
+}
+
+.card-banner {
+    width: 29rem;
+    height: 29rem;
+    border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
+    background-color: var(--color-span);
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+.img-banner img {
+    position: absolute;
+    width: 670px;
+    top: -10px;
+    right: 10px;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
+    border: none;
+}
+
+.card-case {
+    width: 360px;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+
+.card-case-name {
+    position: absolute;
+    font-size: 12px;
+    color: var(--color-text-light);
+    right: 20px;
+    bottom: 0px;
+}
+
+.sobre {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.hint-title {
+    color: var(--color-span);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.title {
+    color: var(--color-text-dark);
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.title span {
+    color: var(--color-white);
+}
+
+.card-icon {
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.delivery {
+    margin-top: 45px;
+}
+
+.card-text {
+    color: var(--color-text);
+    font-size: 15px;
+    padding: 0px 30px;
+}
+
+.card-text p {
+    font-size: 22px;
+    color: var(--color-text-dark);
+}
+
+.catalogo {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.active {
+    background-color: var(--color-text-light);
+}
+
+.container-menu {
+    margin-bottom: 40px;
+}
+
+.card-item {
+    height: 360px;
+}
+
+.card-item .img-produto img {
+    width: 100%;
+    border-radius: 11px;
+}
+
+.card-item .title-produto {
+    color: var(--color-text-dark);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    margin-bottom: 0px;
+}
+
+.card-item .price-produto {
+    color: var(--color-text-light);
+    font-size: 24px;
+}
+
+.card-item .add-carrinho {
+    display: none;
+    text-align: center;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-menos {
+    color: var(--color-black);
+    padding: 5px 7px;
+    border: 2px solid var(--color-black);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-mais {
+    color: var(--color-black);
+    padding: 5px 7px;
+    border: 2px solid var(--color-black);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-numero-itens {
+    color: var(--color-black);
+    padding: 2px 15px;
+    border-top: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+    font-size: 18px;
+}
+
+.btn-add {
+    border: 2px solid var(--color-black);
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    margin-left: 15px;
+}
+
+.card-item:hover {
+    background-color: var(--color-text-light);  
+}
+
+.card-item:hover .title-produto {
+    display: none; 
+}
+
+.card-item:hover .add-carrinho {
+    display: flex; 
+}
+
+.card-item:hover .price-produto {
+    color: var(--color-black)!important;
+    margin-top: 20px;
+}
