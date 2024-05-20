@@ -59,6 +59,16 @@ a.navbar-brand {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
+.btn-dark {
+    background-color: var(--color-text-light);
+    color: var(--color-text-dark)!important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
 .btn-light {
     background-color: var(--color-text-light);
     color: var(--color-text-dark)!important;
@@ -75,6 +85,11 @@ a.navbar-brand {
 
 .btn-white:hover {
     background-color: var(--color-text-light);
+}
+
+.btn-dark:hover {
+    background-color: var(--color-text-dark);
+    color: var(--color-white)!important;
 }
 
 .active {
@@ -411,4 +426,33 @@ a.navbar-brand {
 #feedback-3 .img-feedback {
     background-image: url(../img/Feedbacks/dani-img.png);
     background-size: cover;
+}
+
+.personalize {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.card-secondary {
+    background-color: var(--color-white);
+    border-radius: 70px;
+    padding: 90px;
+}
+
+.card-reserva {
+    height: 330px;
+    width: 330px;
+    border-radius: 120px;
+    background-color: var(--color-text-light);
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
+
+.personalize .img-banner img {
+    width: 100%;
+}
+
+.personalize .span-personalize {
+    color: var(--color-text-light);
 }
