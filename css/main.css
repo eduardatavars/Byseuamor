@@ -17,6 +17,8 @@
     --color-text: #4f4f4f;
     --color-text-out: #90908e;
     --color-black: #212121;
+    --color-feedback: #FFBF00;
+
 }
 
 html, 
@@ -28,6 +30,10 @@ body {
 
 b {
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+}
+
+.hidden {
+    display: none!important;
 }
 
 .color-span {
@@ -65,6 +71,14 @@ a.navbar-brand {
 
 .btn-light:hover {
     background-color: var(--color-white);
+}
+
+.btn-white:hover {
+    background-color: var(--color-text-light);
+}
+
+.active {
+    background-color: var(--color-text-light);
 }
 
 .btn-icon-left {
@@ -228,9 +242,6 @@ a.navbar-brand {
     padding-bottom: 150px;
 }
 
-.active {
-    background-color: var(--color-text-light);
-}
 
 .container-menu {
     margin-bottom: 40px;
@@ -320,4 +331,84 @@ a.navbar-brand {
 .card-item:hover .price-produto {
     color: var(--color-black)!important;
     margin-top: 20px;
+}
+
+.feedbacks {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.card-feedbacks {
+    height: 390px;
+    width: 390px;
+    border-radius: 120px;
+    background-color: var(--color-white);
+    position: absolute;
+    left: 0;
+}
+
+.container-feedback {
+    display: flex;
+}
+
+.feedback {
+    margin-top: 70px;
+}
+
+.img-feedback {
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+
+#feedback-1 .img-feedback {
+    background-image: url(../img/Feedbacks/iza-img.png);
+    background-size: cover;
+}
+
+.nome-feedback {
+    color: var(--color-text-dark);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.nota-feedback {
+    color: var(--color-white);
+}
+
+.text-feedback {
+    display: flex;
+    font-size: 16px;
+    color: var(--color-text-dark);
+}
+
+.text-feedback i {
+    font-size: 35px;
+    color: var(--color-text-dark);
+}
+
+.text-feedback i:first-child {
+    padding-left: 10px;
+    padding-right: 35px;
+}
+
+.text-feedback i:last-child {
+    padding-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#feedback-2 .img-feedback {
+    background-image: url(../img/Feedbacks/lucas-img.png);
+    background-size: cover;
+}
+
+#feedback-3 .img-feedback {
+    background-image: url(../img/Feedbacks/dani-img.png);
+    background-size: cover;
 }
