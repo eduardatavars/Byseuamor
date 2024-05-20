@@ -456,3 +456,31 @@ a.navbar-brand {
 .personalize .span-personalize {
     color: var(--color-text-light);
 }
+
+footer {
+    background-color: var(--color-white);
+}
+
+
+.logo-footer {
+    width: 190px;
+}
+
+.container-footer, 
+.container-footer-text, 
+.container-footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.container-footer {
+    justify-content: start;
+}
+
+.container-footer-text {
+    justify-content: center;
+}
+
+.container-footer-social {
+    justify-content: end;
+}
