@@ -18,6 +18,7 @@
     --color-text-out: #90908e;
     --color-black: #212121;
     --color-feedback: #FFBF00;
+    --color-white-white: #fff;
 
 }
 
@@ -461,7 +462,6 @@ footer {
     background-color: var(--color-white);
 }
 
-
 .logo-footer {
     width: 190px;
 }
@@ -483,4 +483,116 @@ footer {
 
 .container-footer-social {
     justify-content: end;
+}
+
+.modal-full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50px;
+    background: var(--color-white);
+    z-index: 9990;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.m-header {
+    padding-bottom: 20px;
+}
+
+.m-body {
+    flex: 1;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.etapas {
+    display: flex;
+}
+
+.etapa {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-white-white);
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+    color: var(--color-text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.etapa::before {
+    content: '';
+    width: 20px;
+    background-color: var(--color-text-out);
+    position: absolute;
+    height: 2px;
+    margin-left: 55px;
+}
+
+.etapa:last-child::before {
+    content: none;
+}
+
+.etapa.active, .etapa.active::before {
+    background-color: var(--color-text-light);
+}
+
+.title-presente {
+    font-size: 20px;
+    color: var(--color-text-dark);
+}
+
+.modal-full .item-presente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-text-out);
+}
+
+.modal-full .item-presente:last-child {
+    border-bottom: none;
+}
+
+.modal-full .img {
+    width: 100px;
+    border-radius: 11px;
+}
+
+
+.modal-full .title-produto {
+    color: var(--color-text-dark);
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.modal-full .price-produto {
+    color: var(--color-span);
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.modal-full .dados-produto {
+    flex: 1;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.modal-full .add-carrinho {
+    display: flex;
+    text-align: center;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
 }
