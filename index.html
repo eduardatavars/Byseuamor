@@ -473,7 +473,7 @@
                     </div>
                 </div>
                 
-                <div id="localEntrega" class="row mr-0 ml-0">
+                <div id="localEntrega" class="row mr-0 ml-0 hidden">
                     
                     <div class="col-4">
                         <div class="form-group container-cep">
@@ -555,8 +555,57 @@
                         </div>
                     </div>
                 </div>
-                <div id="resumoPresente" class="row mr-0 ml-0 hidden">
-                    
+
+                <div id="resumoPresente" class="row mr-0 ml-0">
+                    <div class="col-12">
+                        <p class="title-carrinho mt-4">
+                            <b>Itens do pedido:</b>
+                        </p>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row" id="listaItensResumo">
+
+                            <div class="col-12 item-presente resumo">
+                                <div class="img-produto-resumo">
+                                    <img src="./img/Catalogo Bea/Pinturas/img4.jpeg" alt="">
+                                </div>
+                                <div class="dados-produto">
+                                    <p class="title-produto-resumo">
+                                        <b>Nome do presente</b>
+                                    </p>
+                                    <p class="price-produto-resumo">
+                                        <b>R$ 149,99</b>
+                                    </p>
+                                </div>
+                                <p class="quantidade-produto-resumo">
+                                    x <b>3</b>
+                                </p>
+                            </div>   
+
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <p class="title-carrinho mt-4">
+                            <b>Local da entrega:</b>
+                        </p>
+                    </div>
+
+                    <div class="col-12 item-presente resumo">
+                        <div class="img-map">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="dados-produto">
+                            <p class="texto-endereco">
+                                <b id="resumoEndereco">Rua teste, 200, bairro teste</b>
+                            </p>
+                            <p class="cidade-endereco" id="cidadeEndereco">
+                                Cidade-SP / 12345-678
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -588,7 +588,7 @@ footer {
     border-bottom: none;
 }
 
-.modal-full .img {
+.modal-full img {
     width: 100px;
     border-radius: 11px;
 }
@@ -677,3 +677,54 @@ select.form-control{
     top: 38px;
 }
 
+.title-produto-resumo {
+    color: var(--color-text-dark);
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.img-produto-resumo img {
+    width: 60px;
+}
+
+.item-presente .resumo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.price-produto-resumo {
+    color: var(--color-text-light);
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.quantidade-produto-resumo {
+    color: var(--color-text-dark);
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.img-map {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-text-light);
+    color: var(--color-white);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+}
+
+.texto-endereco {
+    margin-bottom: 0;
+    color: var(--color-text-dark);
+}
+
+.cidade-endereco {
+    margin-bottom: 0; 
+    color: var(--color-text-dark);
+}
