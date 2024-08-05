@@ -183,5 +183,42 @@ var MENU = {
             "dsc": "...",
             "price": 70.00
         },
+    ],
+    "cafeManha": [
+        {
+            "id": "cafeManha01",
+            "img": "./img/Catalogo_Bea/CafeDaManha/img1.jpeg",
+            "name": "cafeManha01",
+            "dsc": "...",
+            "price": 70.00
+        },
+        {
+            "id": "cafeManha02",
+            "img": "./img/Catalogo_Bea/CafeDaManha/img2.jpeg",
+            "name": "cafeManha02",
+            "dsc": "...",
+            "price": 70.00
+        },
+        {
+            "id": "cafeManha03",
+            "img": "./img/Catalogo_Bea/CafeDaManha/img3.jpeg",
+            "name": "cafeManha03",
+            "dsc": "...",
+            "price": 70.00
+        },
+        {
+            "id": "cafeManha04",
+            "img": "./img/Catalogo_Bea/CafeDaManha/img4.jpeg",
+            "name": "cafeManha04",
+            "dsc": "...",
+            "price": 70.00
+        },
+        {
+            "id": "cafeManha05",
+            "img": "./img/Catalogo_Bea/CafeDaManha/img5.jpeg",
+            "name": "cafeManha05",
+            "dsc": "...",
+            "price": 70.00
+        },
     ]
 }

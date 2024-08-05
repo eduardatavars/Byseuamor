@@ -19,7 +19,7 @@ catalogo.metodos = {
         var filtro = MENU [categoria];
         console.log(filtro);
 
-        
+        $("#itemsCatalogo").html('');
 
         $.each(filtro, (i, e) => {
 
@@ -29,6 +29,12 @@ catalogo.metodos = {
             $("#itemsCatalogo").append(temp) //adicionando o template
 
         })
+
+        // remove o ativo
+        $(".container-menu a").removeClass('active');
+
+        // seta o menu para ativo
+        $("#menu-" + categoria).addClass('active');
     },
 }
 
