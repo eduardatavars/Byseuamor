@@ -78,7 +78,6 @@ catalogo.metodos = {
         $("#qntd-" + id).text(qntdAtual + 1);
     },
 
-
     //adicionar ao carrinho o item do catalogo
     adicionarCarrinho: (id) => {
         let qntdAtual = parseInt($("#qntd-" + id).text());
@@ -107,11 +106,66 @@ catalogo.metodos = {
                     MEU_CARRINHO.push(item[0]) //aumentar a quantidade do carrinho sem duplicar o presente
                 }
 
+                catalogo.metodos.mensagem('Item adicionado ao carrinho', 'green');
                 $("#qntd-" + id).text(0);
+
+                catalogo.metodos.atualizarBadgeTotal();
             }
         }
 
-    }
+    },
+
+    //atualiza o badge totais dos botões "Meu carrinho"
+    atualizarBadgeTotal: () => {
+
+        var total = 0;
+
+        $.each(MEU_CARRINHO, (i, e) => {
+            total += e.qntd
+        })
+
+        if (total > 0) {
+            $(".botao-carrinho").removeClass('hidden');
+            $(".container-total-carrinho").removeClass('hidden');
+        } else {
+            $(".botao-carrinho").addClass('hidden');
+            $(".container-total-carrinho").addClass('hidden');
+        }
+
+        $(".badge-total-carrinho").html(total);
+    },
+
+    //abrir a modal de carrinho
+    abrirCarrinho: (abrir) => {
+
+        if (abrir) {
+            $("#modalCarrinho").removeClass('hidden');
+        } else {
+            $("#modalCarrinho").addClass('hidden');
+        }
+
+    },
+
+
+
+
+    //mensagens
+    mensagem: (texto, cor = 'red', tempo = 3500) => {
+
+        let id = Math.floor(Date.now() * Math.random()).toString();
+
+        let msg = `<div id="msg-${id}" class="animated fadeInDown toast ${cor}">${texto}</div>`;
+
+        $("#container-mensagens").append(msg);
+
+        setTimeout(() => {
+            $("#msg-" + id).removeClass('fadeInDown');
+            $("#msg-" + id).addClass('fadeOutUp');
+            setTimeout(() => {
+                $("#msg-" + id).remove();
+            }, 800);
+        }, tempo)
+    }, 
 }
 
 catalogo.templates = {
