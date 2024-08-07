@@ -398,7 +398,9 @@
                         <div class="form-group container-cep">
                             <label>CEP:</label>
                             <input type="text" id="txtCEP" class="form-control">
-                            <a class="btn btn-light btn-sm"><i class="fa fa-search"></i></a>
+                            <a class="btn btn-light btn-sm" onclick="catalogo.metodos.buscarCep()">
+                                <i class="fa fa-search"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -545,10 +547,10 @@
                     </p>
                 </div>
 
-                <a onclick="catalogo.metodos.carregarEtapa(2)" class="btn btn-light float-right hidden" id="btnEtapaPedido">
+                <a onclick="catalogo.metodos.carregarEndereco()" class="btn btn-light float-right hidden" id="btnEtapaPedido">
                     Avançar
                 </a>
-                <a onclick="catalogo.metodos.carregarEtapa(3)" class="btn btn-light float-right" id="btnEtapaEndereco">
+                <a onclick="catalogo.metodos.resumoPedido()" class="btn btn-light float-right" id="btnEtapaEndereco">
                     Revisar pedido
                 </a>
                 <a class="btn btn-light float-right hidden" id="btnEtapaResumo">
