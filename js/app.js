@@ -6,6 +6,8 @@ var catalogo = {};
 
 var MEU_CARRINHO = [];
 
+var VALOR_CARRINHO = 0;
+
 catalogo.eventos = {
 
     init: () => {
@@ -232,10 +234,16 @@ catalogo.metodos = {
                 .replace(/\${qntd}/g, e.qntd)
 
                 $("#itensCarrinho").append(temp); 
+
+                //ultimo item 
+                if ((i + 1) == MEU_CARRINHO.length) {
+                    catalogo.metodos.carregarValores();
+                }
     
             })
         } else {
             $("#itensCarrinho").html('<p class="carrinho-vazio"><i class="fas fa-gift"></i> Seu carrinho está vazio.</p>');
+            catalogo.metodos.carregarValores();
         }
     },
 
@@ -278,8 +286,30 @@ catalogo.metodos = {
 
         //atualiza o botão carrinho com a quantidade atualizada
         catalogo.metodos.atualizarBadgeTotal();
+
+        //atualiza os valores (R$) totais do carrinho
+        catalogo.metodos.carregarValores();
     },
 
+    //carrega os valores de subtotal, entrega e total
+    carregarValores: () => {
+
+        VALOR_CARRINHO = 0;
+
+        $("#lblSubtotal").text('R$ 0,00');
+        $("#lblValorEntrega").text('A combinar');
+        $("#lblValorTotal").text('R$ 0,00');
+
+        $.each(MEU_CARRINHO, (i, e) => {
+            
+            VALOR_CARRINHO += parseFloat(e.price * e.qntd);
+
+            if ((i + 1) == MEU_CARRINHO.length) {
+                $("#lblSubtotal").text(`R$ ${VALOR_CARRINHO.toFixed(2).replace('.', ',')}`);
+                $("#lblValorTotal").text(`R$ ${VALOR_CARRINHO.toFixed(2).replace('.', ',')}`);
+            }
+        })
+    },
 
     //mensagens
     mensagem: (texto, cor = 'red', tempo = 3500) => {
