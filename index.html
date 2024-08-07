@@ -51,7 +51,7 @@
                     </ul>
                     <a class="btn btn-white btn-icon" onclick="catalogo.metodos.abrirCarrinho(true)">
                         Meus presentes <span class="icon">
-                            <div class="container-total-carrinho badge-total-carrinho hidden">8</div>
+                            <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
                             <i class="fas fa-gift"></i>
                         </span>
                     </a>
@@ -369,15 +369,15 @@
         </div>
     </footer>
 
-    <div class="modal-full hidden" id="modalCarrinho">
+    <div class="modal-full animated fadeIn hidden" id="modalCarrinho">
         <div class="m-header">
             <div class="container">
-                <a href="" class="btn btn-white-white btn-sm float-right" onclick="catalogo.metodos.abrirCarrinho(true)">
+                <a id="btnFecharModalCarrinho" class="btn btn-white-white btn-sm float-right" onclick="catalogo.metodos.abrirCarrinho(false)">
                     Fechar
                 </a>
                 <div class="etapas">
                     <div class="etapa etapa1 active">1</div>
-                    <div class="etapa etapa2 active">2</div>
+                    <div class="etapa etapa2">2</div>
                     <div class="etapa etapa3">3</div>
                 </div>
                 <p class="title-presente mt-4">
@@ -389,21 +389,7 @@
             <div class="container">
                 
                 <div id="itensCarrinho" class="row mr-0 ml-0 hidden">
-                    <div class="col-12 item-presente">
-                        <div class="img-produto">
-                            <img class="img" src="./img/Catalogo_Bea/Pinturas/img1.jpg" alt="">
-                        </div>
-                        <div class="dados-produto">
-                            <p class="title-produto"><b>Nome do produto</b></p>
-                            <p class="price-produto"><b>R$ 149,99</b></p>
-                        </div>
-                        <div class="add-carrinho">
-                            <span class="btn-menos"><i class="fas fa-minus"></i></span>
-                            <span class="add-numero-itens">0</span>
-                            <span class="btn-mais"><i class="fas fa-plus"></i></span>
-                            <span class="btn btn-remove"><i class="fas fa-times"></i></span>
-                        </div>
-                    </div>
+                    
                 </div>
                 
                 <div id="localEntrega" class="row mr-0 ml-0 hidden">
@@ -489,7 +475,7 @@
                     </div>
                 </div>
 
-                <div id="resumoPresente" class="row mr-0 ml-0">
+                <div id="resumoPresente" class="row mr-0 ml-0 hidden">
                     <div class="col-12">
                         <p class="title-carrinho mt-4">
                             <b>Itens do pedido:</b>
@@ -501,7 +487,7 @@
 
                             <div class="col-12 item-presente resumo">
                                 <div class="img-produto-resumo">
-                                    <img src="./img/Catalogo Bea/Pinturas/img4.jpeg" alt="">
+                                    <img src="./img/Catalogo_Bea/Pinturas/img4.jpeg" alt="">
                                 </div>
                                 <div class="dados-produto">
                                     <p class="title-produto-resumo">
@@ -559,17 +545,17 @@
                     </p>
                 </div>
 
-                <a class="btn btn-light float-right hidden" id="btnEtapaPedido">
+                <a onclick="catalogo.metodos.carregarEtapa(2)" class="btn btn-light float-right hidden" id="btnEtapaPedido">
                     Avançar
                 </a>
-                <a class="btn btn-light float-right" id="btnEtapaEndereco">
+                <a onclick="catalogo.metodos.carregarEtapa(3)" class="btn btn-light float-right" id="btnEtapaEndereco">
                     Revisar pedido
                 </a>
                 <a class="btn btn-light float-right hidden" id="btnEtapaResumo">
                     Enviar pedido
                 </a>
 
-                <a class="btn btn-white-white float-right mr-3" id="btnVoltar">
+                <a onclick="catalogo.metodos.voltarEtapa()" class="btn btn-white-white float-right mr-3" id="btnVoltar">
                     Voltar
                 </a>
             </div>
