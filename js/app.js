@@ -425,10 +425,27 @@ catalogo.metodos = {
         }
         
         catalogo.metodos.carregarEtapa(3);
+        catalogo.metodos.carregarResumo();
     },
 
+    //carrega a etapa de resumo do pedido
     carregarResumo: () => {
 
+        $("#listaItensResumo").html('');
+
+        $.each(MEU_CARRINHO, (i, e) => {
+
+            let temp = catalogo.templates.itemResumo.replace(/\${img}/g, e.img)
+                .replace(/\${name}/g, e.name)
+                .replace(/\${price}/g, e.price.toFixed(2).replace('.', ','))
+                .replace(/\${qntd}/g, e.qntd)
+
+            $("#listaItensResumo").append(temp);
+
+        });
+
+        $("#resumoEndereco").html(`${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`);
+        $("#cidadeEndereco").html(`${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`);
     },
 
     //mensagens
@@ -489,6 +506,25 @@ catalogo.templates = {
                 <span class="btn-mais" onclick="catalogo.metodos.aumentarQuantidadeCarrinho('\${id}')"><i class="fas fa-plus"></i></span>
                 <span class="btn btn-remove" onclick="catalogo.metodos.removerItenCarrinho('\${id}')"><i class="fas fa-times"></i></span>
             </div>
+        </div>
+    `,
+
+    itemResumo: `
+        <div class="col-12 item-presente resumo">
+            <div class="img-produto-resumo">
+                <img src="\${img}">
+            </div>
+            <div class="dados-produto">
+                <p class="title-produto-resumo">
+                    <b>\${name}</b>
+                </p>
+                <p class="price-produto-resumo">
+                    <b>R$ \${price}</b>
+                </p>
+            </div>
+            <p class="quantidade-produto-resumo">
+                x <b>\${qntd}</b>
+            </p>
         </div>
     `
 }
