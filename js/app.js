@@ -507,12 +507,13 @@ catalogo.metodos = {
 
     //carregar bnt whatsapp
     carregarBtnWhatsapp: () => {
-        var texto = 'Olá!';
+        var texto = 'Olá! Gostaria de encomendar um presente.';
 
         let encode = encodeURI(texto);
         let URL = `https://wa.me/${CELULAR_BYSEUAMOR}?text=${encode}`;
 
         $("#btnWpp").attr('href', URL);
+        $("#btnWpp2").attr('href', URL);
     },
 
     //metodo para abrir o depoimento
