@@ -26,7 +26,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg pl-0 pr-0">
                 <a class="navbar-brand" href="#">
-                    <img class="img-logo" src="./img/logo.png" width="220" alt="logo byseyamor" />
+                    <img class="img-logo" src="./img/logo.png" width="220" alt="logo byseuamor" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                     <span class="navbar-toggler-icon">
@@ -75,7 +75,7 @@
                             <a class="btn btn-white mt-4 mr-3" href="#">
                                 Ver catálogo
                             </a>
-                            <a class="btn btn-light btn-icon-left mt-4" href="#">
+                            <a class="btn btn-light btn-icon-left mt-4" href="#" id="btnLigar">
                                 <span class="icon-left">
                                     <i class="fas fa-phone-alt"></i>
                                 </span>
@@ -83,10 +83,10 @@
                             </a>
                         </div>
                     </div>
-                    <a class="btn btn-sm btn-white btn-social mt-4 mr-3" href="#">
+                    <a class="btn btn-sm btn-white btn-social mt-4 mr-3" href="https://www.instagram.com/byseuamor/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="btn btn-sm btn-white btn-social mt-4" href="#">
+                    <a class="btn btn-sm btn-white btn-social mt-4" href="#" id="btnWpp" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -299,9 +299,9 @@
                         </div>
                     </div>
 
-                    <a class="btn btn-sm btn-white btn-social active mr-3">1</a>
-                    <a class="btn btn-sm btn-white btn-social mr-3">2</a>
-                    <a class="btn btn-sm btn-white btn-social">3</a>
+                    <a id="btnFeedback-1" class="btn btn-sm btn-white btn-social active mr-3" onclick="catalogo.metodos.abrirFeedback(1)">1</a>
+                    <a id="btnFeedback-2" class="btn btn-sm btn-white btn-social mr-3" onclick="catalogo.metodos.abrirFeedback(2)">2</a>
+                    <a id="btnFeedback-3" class="btn btn-sm btn-white btn-social" onclick="catalogo.metodos.abrirFeedback(3)">3</a>
                 </div>
             </div>
 
@@ -327,7 +327,7 @@
                                     <br> 
                                     Agende e personalize seu presente de forma simples e rápida.
                                 </p>
-                                <a class="btn btn-dark">
+                                <a class="btn btn-dark" href="#" id="btnReserva" target="_blank">
                                     Personalizar
                                 </a>
                             </div>
@@ -358,7 +358,7 @@
                     </p>
                 </div>
                 <div class="col-3 container-footer-social">
-                    <a class="btn btn-sm btn-white btn-social mr-3" href="#">
+                    <a class="btn btn-sm btn-white btn-social mr-3" href="https://www.instagram.com/byseuamor/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a class="btn btn-sm btn-white btn-social" href="#">

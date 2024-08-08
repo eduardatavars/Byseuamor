@@ -16,6 +16,9 @@ catalogo.eventos = {
 
     init: () => {
        catalogo.metodos.obterItensCatalogo();
+       catalogo.metodos.carregarBtnWhatsapp();
+       catalogo.metodos.carregarBtnLigar();
+       catalogo.metodos.carregarBtnReserva();
     }
 }
 
@@ -483,6 +486,48 @@ catalogo.metodos = {
                 }
             })
         }
+    },
+
+    //carrega o link do btn reserva
+    carregarBtnReserva: () => {
+
+        var texto = 'Olá! gostaria de fazer uma *reserva*.';
+
+        let encode = encodeURI(texto);
+        let URL = `https://wa.me/${CELULAR_BYSEUAMOR}?text=${encode}`;
+
+        $("#btnReserva").attr('href', URL);
+    },
+
+    //carregar o btn de ligar
+    carregarBtnLigar: () => {
+
+        $("#btnLigar").attr('href', `tel:${CELULAR_BYSEUAMOR}`);
+    },
+
+    //carregar bnt whatsapp
+    carregarBtnWhatsapp: () => {
+        var texto = 'Olá!';
+
+        let encode = encodeURI(texto);
+        let URL = `https://wa.me/${CELULAR_BYSEUAMOR}?text=${encode}`;
+
+        $("#btnWpp").attr('href', URL);
+    },
+
+    //metodo para abrir o depoimento
+    abrirFeedback: (feedback) => {
+
+        $("#feedback-1").addClass('hidden');
+        $("#feedback-2").addClass('hidden');
+        $("#feedback-3").addClass('hidden');
+
+        $("#btnFeedback-1").removeClass('active');
+        $("#btnFeedback-2").removeClass('active');
+        $("#btnFeedback-3").removeClass('active');
+
+        $("#feedback-" + feedback).removeClass('hidden');
+        $("#btnFeedback-" + feedback).addClass('active')
     },
 
     //mensagens
