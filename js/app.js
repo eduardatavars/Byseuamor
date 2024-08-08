@@ -10,6 +10,8 @@ var MEU_ENDERECO = null;
 
 var VALOR_CARRINHO = 0;
 
+var CELULAR_BYSEUAMOR = '5582996842296';
+
 catalogo.eventos = {
 
     init: () => {
@@ -446,6 +448,41 @@ catalogo.metodos = {
 
         $("#resumoEndereco").html(`${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`);
         $("#cidadeEndereco").html(`${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`);
+
+        catalogo.metodos.finalizarPedido();
+    },
+
+    //atualiza o link do botão do WhatsApp
+    finalizarPedido: () => {
+
+        if (MEU_CARRINHO.length > 0 && MEU_ENDERECO != null) {
+
+            var texto = 'Olá! Gostaria de fazer um pedido:';
+            texto += `\n*Itens do pedido:*\n\n\${itens}`;
+            texto += '\n*Endereço de entrega:*';
+            texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
+            texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
+            texto += `\n\n*Total (entrega a combinar): R$ ${VALOR_CARRINHO.toFixed(2).replace('.', ',')}*`;
+
+            var itens = '';
+
+            $.each(MEU_CARRINHO, (i, e) => {
+
+                itens += `*${e.qntd}x* ${e.name} ...... R$ ${e.price.toFixed(2).replace('.', ',')} \n`;
+
+                //ultimo item
+                if ((i + 1) == MEU_CARRINHO.length) {
+                    
+                    texto = texto.replace(/\${itens}/g, itens);
+
+                    // convertendo a URL
+                    let encode = encodeURI(texto);
+                    let URL = `https://wa.me/${CELULAR_BYSEUAMOR}?text=${encode}`;
+
+                    $("#btnEtapaResumo").attr('href', URL);
+                }
+            })
+        }
     },
 
     //mensagens
