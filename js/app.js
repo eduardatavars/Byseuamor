@@ -43,7 +43,7 @@ catalogo.metodos = {
 
 
             //botao ver mais foi clicado (5 itens)
-            if (vermais && i >= 4 && i < 5) {
+            if (vermais && i >= 4 && i < 8) {
                 $("#itemsCatalogo").append(temp) //adicionando o template
             }
 

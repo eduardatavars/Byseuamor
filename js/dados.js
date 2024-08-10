@@ -9,7 +9,7 @@ var MENU = {
         },
         {
             "id": "pinturas02",
-            "img": "img/Catalogo_Bea/Pinturas/img-2.jpg",
+            "img": "img/Catalogo_Bea/Pinturas/img11.jpg",
             "name": "pinturas02",
             "dsc": "...",
             "price": 70.00
@@ -39,7 +39,7 @@ var MENU = {
     "cestas": [
         {
             "id": "cestas01",
-            "img": "./img/Catalogo_Bea/Caixas/img2.jpg",
+            "img": "./img/Catalogo_Bea/Caixas/img1.jpg",
             "name": "cestas01",
             "dsc": "...",
             "price": 70.00
@@ -67,7 +67,7 @@ var MENU = {
         },
         {
             "id": "cestas05",
-            "img": "./img/Catalogo_Bea/Caixas/img6.jpg",
+            "img": "./img/Catalogo_Bea/Caixas/img10.jpeg",
             "name": "cestas05",
             "dsc": "...",
             "price": 70.00
@@ -76,35 +76,35 @@ var MENU = {
     "personalizados": [
         {
             "id": "personalizados01",
-            "img": "img/Catalogo_Bea/Personalizados/img1.jpeg",
+            "img": "img/Catalogo_Bea/Personalizados/img10.jpg",
             "name": "personalizados01",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "personalizados02",
-            "img": "img/Catalogo_Bea/Personalizados/img7.jpeg",
+            "img": "img/Catalogo_Bea/Personalizados/img11.jpg",
             "name": "personalizados02",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "personalizados03",
-            "img": "img/Catalogo_Bea/Personalizados/img4.jpeg",
+            "img": "img/Catalogo_Bea/Personalizados/img12.jpg",
             "name": "personalizados03",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "personalizados04",
-            "img": "img/Catalogo_Bea/Personalizados/img6.jpg",
+            "img": "img/Catalogo_Bea/Personalizados/img13.jpg",
             "name": "personalizados04",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "personalizados05",
-            "img": "img/Catalogo_Bea/Personalizados/img3.jpeg",
+            "img": "img/Catalogo_Bea/Personalizados/img14.jpg",
             "name": "personalizados05",
             "dsc": "...",
             "price": 70.00
@@ -113,14 +113,14 @@ var MENU = {
     "quadros": [
         {
             "id": "quadros01",
-            "img": "./img/Catalogo_Bea/Quadros/img2.jpeg",
+            "img": "./img/Catalogo_Bea/Quadros/img12.jpg",
             "name": "quadros01",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "quadros02",
-            "img": "./img/Catalogo_Bea/Quadros/img6.jpg",
+            "img": "./img/Catalogo_Bea/Quadros/img9.jpg",
             "name": "quadros02",
             "dsc": "...",
             "price": 70.00
@@ -141,7 +141,14 @@ var MENU = {
         },
         {
             "id": "quadros05",
-            "img": "./img/Catalogo_Bea/Quadros/img1.jpg",
+            "img": "./img/Catalogo_Bea/Quadros/img10.jpg",
+            "name": "quadros05",
+            "dsc": "...",
+            "price": 70.00
+        },
+        {
+            "id": "quadros06",
+            "img": "./img/Catalogo_Bea/Quadros/img11.jpg",
             "name": "quadros05",
             "dsc": "...",
             "price": 70.00
