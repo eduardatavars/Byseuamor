@@ -157,6 +157,11 @@ a.navbar-brand {
     width: 50px;
 }
 
+.navbar-toggler .navbar-toggler-icon {
+    text-decoration: none;
+    color: var(--color-text-dark);
+}
+
 .banner {
     padding-top: 110px;
     padding-bottom: 200px;

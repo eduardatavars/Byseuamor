@@ -61,15 +61,6 @@
       padding-bottom: 50px;
    }
 
-   .text-banner h1 b {
-      font-size: 36px;
-      color: var(--color-text-dark);
-   }
-
-   .text-banner .color-span {
-      color: var( --color-white);
-   }
-
    .text-banner p {
       font-size: 18px;
    }

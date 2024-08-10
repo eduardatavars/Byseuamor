@@ -67,7 +67,7 @@ var MENU = {
         },
         {
             "id": "cestas05",
-            "img": "./img/Catalogo_Bea/Caixas/img10.jpeg",
+            "img": "./img/Catalogo_Bea/Caixas/img10.jpg",
             "name": "cestas05",
             "dsc": "...",
             "price": 70.00
@@ -127,7 +127,7 @@ var MENU = {
         },
         {
             "id": "quadros03",
-            "img": "./img/Catalogo_Bea/Quadros/img4.jpg",
+            "img": "./img/Catalogo_Bea/Quadros/img3.jpg",
             "name": "quadros03",
             "dsc": "...",
             "price": 70.00
