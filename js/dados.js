@@ -39,7 +39,7 @@ var MENU = {
     "cestas": [
         {
             "id": "cestas01",
-            "img": "./img/Catalogo_Bea/Caixas/img1.jpg",
+            "img": "./img/Catalogo_Bea/Caixas/img11.jpg",
             "name": "cestas01",
             "dsc": "...",
             "price": 70.00
