@@ -97,7 +97,7 @@ var MENU = {
         },
         {
             "id": "personalizados04",
-            "img": "./img/Catalogo_Bea/Personalizados/img6.jpg",
+            "img": "./img/Catalogo_Bea/Personalizados/img6.jpeg",
             "name": "personalizados04",
             "dsc": "...",
             "price": 70.00
