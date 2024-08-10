@@ -491,7 +491,7 @@ catalogo.metodos = {
     //carrega o link do btn reserva
     carregarBtnReserva: () => {
 
-        var texto = 'Olá! gostaria de fazer uma *reserva*.';
+        var texto = 'Olá! gostaria de personalizar um *presente*.';
 
         let encode = encodeURI(texto);
         let URL = `https://wa.me/${CELULAR_BYSEUAMOR}?text=${encode}`;
@@ -553,10 +553,10 @@ catalogo.metodos = {
 catalogo.templates = {
 
     item: `
-        <div class="col-3 mb-5 animated fadeInUp delay-02s">
+        <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5 animated fadeInUp delay-02s">
             <div class="card card-item" id="\${id}">
                 <div class="img-produto">
-                    <img src="\${img}" width="50rem" height="220rem" alt="Placa de madeira pintada">
+                    <img src="\${img}" alt="Placa de madeira pintada">
                 </div>
                 <p class="title-produto text-center mt-4">
                     <b>\${name}</b>
