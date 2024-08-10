@@ -9,7 +9,7 @@ var MENU = {
         },
         {
             "id": "pinturas02",
-            "img": "./img/Catalogo_Bea/Pinturas/img2.jpeg",
+            "img": "./img/Catalogo_Bea/Pinturas/img2.JPG",
             "name": "pinturas02",
             "dsc": "...",
             "price": 70.00
