@@ -810,3 +810,12 @@ select.form-control{
     border-radius: 50px;
     margin-bottom: 10px;
 }
+
+.link-footer {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+.link-footer:hover {
+    color: var(--color-text-dark);
+}
