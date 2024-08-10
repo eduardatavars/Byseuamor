@@ -62,7 +62,7 @@
    }
 
    .text-banner h1 b {
-      color: var(--color-text-dark);
+      color: var(--color-text-light-dark);
    }
 
    .text-banner .color-span {
