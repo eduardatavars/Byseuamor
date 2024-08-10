@@ -556,7 +556,7 @@ catalogo.templates = {
         <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5 animated fadeInUp delay-02s">
             <div class="card card-item" id="\${id}">
                 <div class="img-produto">
-                    <img src="\${img}" alt="Placa de madeira pintada">
+                    <img src="\${img}">
                 </div>
                 <p class="title-produto text-center mt-4">
                     <b>\${name}</b>
@@ -587,7 +587,7 @@ catalogo.templates = {
                 <span class="btn-menos" onclick="catalogo.metodos.diminuirQuantidadeCarrinho('\${id}')"><i class="fas fa-minus"></i></span>
                 <span class="add-numero-itens" id="qntd-carrinho-\${id}">\${qntd}</span>
                 <span class="btn-mais" onclick="catalogo.metodos.aumentarQuantidadeCarrinho('\${id}')"><i class="fas fa-plus"></i></span>
-                <span class="btn btn-remove" onclick="catalogo.metodos.removerItenCarrinho('\${id}')"><i class="fas fa-times"></i></span>
+                <span class="btn btn-remove no-mobile" onclick="catalogo.metodos.removerItenCarrinho('\${id}')"><i class="fas fa-times"></i></span>
             </div>
         </div>
     `,
