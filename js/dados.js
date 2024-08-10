@@ -76,35 +76,35 @@ var MENU = {
     "personalizados": [
         {
             "id": "personalizados01",
-            "img": "./img/Catalogo_Bea/Personalizados/img1.jpeg",
+            "img": "img/Catalogo_Bea/Personalizados/img1.jpeg",
             "name": "personalizados01",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "personalizados02",
-            "img": "./img/Catalogo_Bea/Personalizados/img7.jpeg",
+            "img": "img/Catalogo_Bea/Personalizados/img7.jpeg",
             "name": "personalizados02",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "personalizados03",
-            "img": "./img/Catalogo_Bea/Personalizados/img4.jpeg",
+            "img": "img/Catalogo_Bea/Personalizados/img4.jpeg",
             "name": "personalizados03",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "personalizados04",
-            "img": "./img/Catalogo_Bea/Personalizados/img6.jpg",
+            "img": "img/Catalogo_Bea/Personalizados/img6.jpg",
             "name": "personalizados04",
             "dsc": "...",
             "price": 70.00
         },
         {
             "id": "personalizados05",
-            "img": "./img/Catalogo_Bea/Personalizados/img3.jpeg",
+            "img": "img/Catalogo_Bea/Personalizados/img3.jpeg",
             "name": "personalizados05",
             "dsc": "...",
             "price": 70.00
